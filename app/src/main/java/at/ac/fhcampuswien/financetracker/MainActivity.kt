@@ -18,6 +18,7 @@ import at.ac.fhcampuswien.financetracker.database.Category
 import at.ac.fhcampuswien.financetracker.database.AppDatabase
 import at.ac.fhcampuswien.financetracker.database.Transaction
 import at.ac.fhcampuswien.financetracker.database.TransactionRepository
+import at.ac.fhcampuswien.financetracker.navigation.Navigation
 import at.ac.fhcampuswien.financetracker.ui.theme.FinanceTrackerTheme
 import kotlinx.coroutines.launch
 
@@ -44,10 +45,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             FinanceTrackerTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    Navigation(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
