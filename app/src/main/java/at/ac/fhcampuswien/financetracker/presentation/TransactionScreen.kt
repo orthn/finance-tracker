@@ -10,7 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavController
 
 @Composable
-fun TransactionScreen (
+fun TransactionScreen(
     modifier: Modifier,
     navController: NavController
 ) {
@@ -18,7 +18,8 @@ fun TransactionScreen (
         modifier = modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
-    ){
-        Text("This is the transaction screen\nSoon here you will see all your transactions")
+    ) {
+        Text("Transactions:")
+
     }
 }
