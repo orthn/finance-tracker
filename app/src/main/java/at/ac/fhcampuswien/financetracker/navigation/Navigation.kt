@@ -23,5 +23,4 @@ fun Navigation(modifier: Modifier) {
             TransactionScreen(modifier = modifier, navController = controller)
         }
     }
-
 }
